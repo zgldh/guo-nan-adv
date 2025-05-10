@@ -17,9 +17,17 @@ jobs:
           npm install
           npm run build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: D3rHase/rsync-deploy-action@latest
         with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          # hostname / IP of the server
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          # ssh port of the server
+          # user of the server
+          USER: ${{ secrets.DEPLOY_HOST_USER }}
+          # private ssh key registered on the server
+          PRIVATE_SSH_KEY: ${{ secrets.DEPLOY_HOST_PRIVATE_KEY }}
+          # path of the file-s to deploy
+          REPOSITORY_PATH: dist/
+          # server path / destination
+          SERVER_PATH: ${{ secrets.DEPLOY_HOST_PATH }}
+                
