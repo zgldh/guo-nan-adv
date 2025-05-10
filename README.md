@@ -1,10 +1,8 @@
-# Outext
+# 郭楠大冒险
 
-> 最喜欢的恐怖游戏是《Outlast》，取名 Outtext -> Outext
+傻逼群友想玩儿的。做个试试。
 
-文字类逃脱游戏，急中生智，逃离这个恐怖医院
-
-只是单纯实现自己脑中的想法，图一乐~
+> 从 Outext 抄来的框架。<a href="https://github.com/mrleidesen/Outext" target="_blank" >https://github.com/mrleidesen/Outext</a>
 
 ## 规则
 
@@ -19,6 +17,11 @@ pnpm install
 
 pnpm dev
 ```
+
+## 开发
+
+在 `src/data/index.ts` 里面有剧情信息。基本上只要改这里即可。  
+提交代码，合并到 `main` 分支即可自动部署。
 
 ## 欢迎提建议
 

@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Outext from "./Outext";
+import Game from "./Game";
 import Store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
     <Store>
-      <Outext />
+      <Game />
     </Store>
   </React.StrictMode>,
   document.getElementById("root")

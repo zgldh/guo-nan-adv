@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { getRandomNumber, formatTime } from "./utils";
 import type { TLimitType } from "./types";
 
-export default function Outext() {
+export default function Game() {
   const { isStart, isFinish } = useStore();
   return (
     <div className="w-screen h-screen overflow-hidden bg-gray-800 text-white select-none">
@@ -19,7 +19,7 @@ export default function Outext() {
 }
 
 const GameMenu = () => {
-  const VERSION = "2.0.5";
+  const VERSION = "1.0.0";
   const [isUserSet, setIsUserSet] = React.useState(false);
 
   const handleGameStart = () => {
@@ -40,18 +40,13 @@ const GameMenu = () => {
               color: "transparent",
             }}
           >
-            Outext
+            郭楠大冒险
           </h1>
           <a
             target="_blank"
             className="text-xs text-center my-2"
-            href="https://github.com/mrleidesen/Outext"
-          >
-            ❤❤❤ 一人在家 ❤❤❤ <br />
-            ❤❤❤ 开源仓库 ❤❤❤ <br />
-            ❤❤🔞 不见不散 🔞❤❤ <br />
-            ❤❤🔞 等你来写 🔞❤❤ <br />
-          </a>
+            href="https://github.com/zgldh/guo-nan-adv"
+          >开源仓库</a>
           <h3 className="text-xs my-2">版本：v{VERSION}</h3>
           <Button className="my-3" onClick={handleGameStart}>
             开始游戏
