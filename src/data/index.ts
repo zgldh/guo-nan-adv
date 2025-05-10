@@ -27,7 +27,7 @@ const fullPower: TActionLimit[] = [
 
 export const screenplay: { [key: string]: TScene } = {
   "game-open": [
-    "某天，你睁开眼，发现自己在一个陌生的地方",
+    "某天，你睁开眼，发现自己在一个大专寝室里",
     "你回顾四周，发现自己在一间病房里",
     "你想不起来自己是如何来到这儿的，你怀疑自己在做梦，狠狠抽了自己一巴掌",
     "说不上疼，但又不疼的感觉很奇妙",
