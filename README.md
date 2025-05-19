@@ -4,6 +4,8 @@
 
 > 从 Outext 抄来的框架。<a href="https://github.com/mrleidesen/Outext" target="_blank" >https://github.com/mrleidesen/Outext</a>
 
+群友都是三分钟热度。 
+
 ## 规则
 
 每次选择都会有时间限制（时间长短不一），如果超时未选，会直接死亡
